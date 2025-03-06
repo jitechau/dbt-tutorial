@@ -1,0 +1,1 @@
+select * from retail.landing.orders
