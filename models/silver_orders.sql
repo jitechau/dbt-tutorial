@@ -1,6 +1,6 @@
 select 
 ID,
-to_date(created_at) CREATED_AT,
+to_date(created_at) order_date,
 USER_ID,
 PRODUCT_ID,
 QUANTITY,
