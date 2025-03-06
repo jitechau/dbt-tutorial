@@ -1,1 +1,1 @@
-select * from retail.landing.orders
+select * from {{ source('landing','orders') }}
