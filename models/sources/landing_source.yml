@@ -6,11 +6,47 @@ sources:
     schema: landing  
     tables:
       - name: orders
+        columns:
+          - name: id
+            tests:
+              - not_null:
+                  config:
+                    severity: warn
+              - unique:
+                  config:
+                    severity: warn
         freshness:
           warn_after:
             count: 365
             period: day
         loaded_at_field: created_at
       - name: products
+        columns:
+          - name: id
+            tests:
+              - not_null:
+                  config:
+                    severity: warn
+              - unique:
+                  config:
+                    severity: warn
       - name: reviews
+        columns:
+          - name: id
+            tests:
+              - not_null:
+                  config:
+                    severity: warn
+              - unique:
+                  config:
+                    severity: warn
       - name: users
+        columns:
+          - name: id
+            tests:
+              - not_null:
+                  config:
+                    severity: warn
+              - unique:
+                  config:
+                    severity: warn
