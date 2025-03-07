@@ -1,3 +1,9 @@
+{{
+    config(
+        schema='gold'
+    )
+}}
+
 select
     to_date(r.CREATED_AT) as review_date,
     r.PRODUCT_ID,
